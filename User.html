@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Portal</title>
+    <link rel="stylesheet" href="Styles/user.css">
+</head>
+
+<body>
+
+    <div class="userDetails">
+        <table border="1" cellpadding="14">
+            <caption>
+                <h3>Users</h3>
+            </caption>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Attendance</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody align="center">
+                <tr>
+                    <td>{username}</td>
+                    <td>{email}</td>
+                    <td>
+                        <select name="attendance" id="attendance">
+                            <option value="absent">Absent</option>
+                            <option value="present">Present</option>
+                        </select>
+                    </td>
+                    <td class="Savebtn">
+                        <button onclick="Save()">Save</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
